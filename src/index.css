@@ -1,12 +1,9 @@
-/* src/index.css */
-
-/* Define color variables for light and dark themes */
 :root {
   --background-color: #f4f4f4;
   --text-color: #333;
   --card-background: white;
   --card-border: #ddd;
-  --link-color: #6200ee; /* A modern purple color */
+  --link-color: #6200ee;
   --hover-color: rgba(98, 0, 238, 0.1);
 }
 

@@ -1,22 +1,19 @@
-// src/pages/Dashboard.tsx
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
-import { projectsData } from '../projectData'; // Import the centralized project data
+import { projectsData } from '../projectData';
 
 const Dashboard: React.FC = () => {
     return (
         <div className="dashboard">
-            <h1>My Scrimba Dashboard</h1>
+            <h1>Scrimba Projects Dashboard</h1>
             <div className="project-list">
                 {Object.entries(projectsData).map(([id, project]) => (
-                    <Link to={`/projects/${id}`} key={id}>
-                        <ProjectCard
-                            title={project.title}
-                            description={project.description}
-                            link={`/projects/${id}`}
-                        />
-                    </Link>
+                    <ProjectCard
+                        key={id}
+                        title={project.title}
+                        description={project.description}
+                        liveDemoLink={project.liveDemoLink}
+                    />
                 ))}
             </div>
         </div>

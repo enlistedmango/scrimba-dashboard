@@ -1,9 +1,7 @@
-// src/App.tsx
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
-import Project from './pages/Project';
-import './App.css'; // Import App.css if you have specific styles
+import './App.css';
 
 const App: React.FC = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,7 +19,6 @@ const App: React.FC = () => {
                 </button>
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
-                    <Route path="/projects/:projectId" element={<Project />} />
                 </Routes>
             </div>
         </Router>

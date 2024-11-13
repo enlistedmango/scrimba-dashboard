@@ -1,19 +1,19 @@
-// src/components/ProjectCard.tsx
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
     title: string;
     description: string;
-    link: string;
+    liveDemoLink: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, liveDemoLink }) => {
     return (
         <div className="project-card">
             <h3>{title}</h3>
             <p>{description}</p>
-            <Link to={link}>View Project</Link>
+            <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
+                View Live Demo
+            </a>
         </div>
     );
 };
