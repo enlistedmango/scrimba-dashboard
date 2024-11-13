@@ -1,0 +1,62 @@
+body {
+    background-color: #121113;
+    font-family: "Teko", sans-serif;
+    font-weight: 200;
+    color: #F7F7F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 25px;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    margin: 5px 0;
+    color: #F7F7F2
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+}
+
+#increment-btn {
+    background: #222725;
+}
+
+#save-btn {
+    background: #899878;
+}
+
