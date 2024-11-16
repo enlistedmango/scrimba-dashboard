@@ -6,7 +6,7 @@ body {
 
 @font-face {
     font-family: 'DigitalDisplay';
-    src: url('./assets/fonts/DigitalDisplay.ttf'),
+    src: url('./assets/fonts/DigitalDisplay.ttf');
 }
 
 #scoreboard {
@@ -27,21 +27,20 @@ body {
 #score-display, #timer-display {
     background-color: black;
     color: #FF004D;
-    font-family: 'DigitalDisplay', Arial, sans-serif;
+    font-family: 'DigitalDisplay', monospace;
     font-size: 50px;
     padding: 10px;
     border-radius: 10px;
     margin: 20px 0;
     border: 2px solid white;
 }
-
-#home-controls, #guest-controls {
+#home-controls, #guest-controls, #timer-controls {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.control-btn, .timer-btn {
+.control-btn {
     background-color: #394867;
     color: whitesmoke;
     font-size: 20px;
@@ -56,6 +55,123 @@ body {
     cursor: pointer;
 }
 
+.timer-add, .timer-start, .timer-stop, #timeout-btn {
+    background-color: #394867;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timer-add:hover, .timer-start:hover, .timer-stop:hover, #timeout-btn:hover {
+    background-color: #536787;
+}
+
 .control-btn:hover {
     background-color: #536787;
+}
+
+.leading {
+    color: #ffd700; /* Gold color for the leading team */
+}
+
+#game-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#new-game-btn {
+    background-color: #394867;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#period-container {
+    margin: 10px 0;
+}
+
+#next-period {
+    background-color: #394867;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#timeout-btn {
+    background-color: #394867;
+    transition: background-color 0.3s ease;
+}
+
+#timeout-btn.timeout-active {
+    background-color: #FF004D;
+    animation: pulse 2s infinite;
+}
+
+.timeout {
+    animation: blink 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#homescore, #guestscore, #timer {
+    font-family: 'DigitalDisplay', monospace;
+    margin: 0;
+}
+
+#timer-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timer-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
