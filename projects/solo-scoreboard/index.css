@@ -1,8 +1,61 @@
 body {
-    margin: 0;
+    background-color: #312F2F;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
 }
 
-.container {
+@font-face {
+    font-family: 'DigitalDisplay';
+    src: url('./assets/fonts/DigitalDisplay.ttf'),
+}
+
+#scoreboard {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#team, #game-timer {
+    text-align: center;
+}
+
+#guestscore, #homescore {
+    margin: 10px;
+}
+
+#score-display, #timer-display {
+    background-color: black;
+    color: #FF004D;
+    font-family: 'DigitalDisplay', Arial, sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 2px solid white;
+}
+
+#home-controls, #guest-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.control-btn, .timer-btn {
+    background-color: #394867;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background-color: #536787;
 }
