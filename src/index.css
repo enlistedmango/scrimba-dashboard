@@ -148,6 +148,33 @@ body {
   opacity: 0.9;
 }
 
+.dashboard-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.dashboard-intro p {
+  margin: 1rem 0;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.dashboard-intro a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.dashboard-intro a:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   .dashboard {
     padding: 1rem;
@@ -165,5 +192,14 @@ body {
 
   .project-list {
     grid-template-columns: 1fr;
+  }
+
+  .dashboard-intro {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-intro p {
+    font-size: 0.95rem;
   }
 }
