@@ -7,21 +7,14 @@ export const projectsData = {
         liveDemoLink: `${BASE_PATH}/projects/business-card/index.html`,
         technologies: ['HTML', 'CSS']
     },
-    basicWebsite: {
-        title: '2. Personal Site',
-        description: 'A personal website about me',
-        liveDemoLink: `${BASE_PATH}/projects/personal-site/index.html`,
-        technologies: ['HTML', 'CSS', 'JavaScript']
-    },
-    
     counterApp: {
-        title: '3. Counter App',
+        title: '2. Counter App',
         description: 'This app allows you to increment and save a counter',
         liveDemoLink: `${BASE_PATH}/projects/counter-app/index.html`,
         technologies: ['HTML', 'CSS', 'JavaScript']
     },
     scoreboard: {
-        title: '4. Basketball Scoreboard (solo project)',
+        title: '3. Basketball Scoreboard (solo project)',
         description: 'Digital scoreboard with timer and period tracking',
         liveDemoLink: `${BASE_PATH}/projects/solo-scoreboard/index.html`,
         technologies: ['HTML', 'CSS', 'JavaScript'],
