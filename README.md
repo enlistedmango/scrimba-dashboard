@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Scrimba Projects Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based dashboard that showcases various projects completed during my learning journey on Scrimba.com.
 
-Currently, two official plugins are available:
+## About Scrimba
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Scrimba](https://scrimba.com) is an interactive coding platform that offers a unique learning experience through hands-on screencasts. Unlike traditional video tutorials, Scrimba's "scrims" allow learners to pause, edit, and run code directly in the browser, making it an excellent platform for learning web development.
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This dashboard serves as a portfolio of projects completed through Scrimba's curriculum. Key features include:
 
-- Configure the top-level `parserOptions` property like this:
+-   🌓 Dark/Light theme toggle
+-   📱 Responsive design
+-   🎯 Project categorization
+-   💻 Live demo links for each project
+-   🔧 Technology stack display for each project
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Technologies Used
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-   React
+-   TypeScript
+-   CSS
+-   React Router
+-   Local Storage (for theme persistence)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Project Structure
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The dashboard displays project cards containing:
+
+-   Project title
+-   Description
+-   Used technologies
+-   Key features (where applicable)
+-   Direct links to live demos
+
+## Getting Started
+
+1. Clone this repository
+2. Install dependencies with `npm install`
+3. Run the development server with `npm run dev`
