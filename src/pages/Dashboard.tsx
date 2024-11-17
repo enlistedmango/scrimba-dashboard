@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
     return (
         <div className="dashboard">
             <div className="dashboard-header">
-                <h1>Project Portfolio</h1>
+                <h1>Scrimba Project Portfolio</h1>
                 <button
                     className="theme-toggle"
                     onClick={toggleTheme}>
